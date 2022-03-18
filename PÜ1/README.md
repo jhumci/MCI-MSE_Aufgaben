@@ -1,11 +1,11 @@
 # Leistungsdiagnostik
 **(kurze Beschreibung des Ziels)**
 
-Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten
+Leistungsdiagnostik im Sportbereich umfasst Untersuchungs- und Testverfahren, die Auskunft über den aktuellen Gesundheitszustand, die Belastbarkeit und den Leistungsstand eines Sportlers geben
 
 ## Installation
 
-(Was muss man tun, bevor man das Werkzeug nutzen kann?)
+
 
 t.b.d.
 
