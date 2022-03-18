@@ -2,7 +2,6 @@
 **(kurze Beschreibung des Ziels)**
 
 Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten
-hallo
 
 ## Installation
 
