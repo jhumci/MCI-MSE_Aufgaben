@@ -1,17 +1,15 @@
 # Leistungsdiagnostik
 **(kurze Beschreibung des Ziels)**
 
-Leistungsdiagnostik im Sportbereich umfasst Untersuchungs- und Testverfahren, die Auskunft über den aktuellen Gesundheitszustand, die Belastbarkeit und den Leistungsstand eines Sportlers geben
+Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten
 
 ## Installation
 
-
-
-t.b.d.
+Ergometer Software für die Diagnostik installieren, vor der ersten Benutzung allerdings nochmal alle Einstellungen überprüfen.
 
 ## Usage
 
-(Wie benutzt man das Werkzeug. Wo müssen Daten in welcher Form liegen?)
+Mithilfe der Leistungsdiagnostik können Vitalwerte wie zum Beispiel die Sauerstoffsättigung, die Herzfrequenz oder die EKG-Ableitungen unter steigender Belastung ausgewertet werden.
 
 Start über Kommandozeile
 ```python main.py```
