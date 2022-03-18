@@ -15,8 +15,8 @@ Mithilfe der Leistungsdiagnostik können Vitalwerte wie zum Beispiel die Sauerst
 **(Wer ist im Team Name + Matrikelnummer + Email)**
 
 - [Julian Huber - 123](julian.huber@mci.edu)
-- Katarzyna Stefanowicz (sk6152@mci4me.at)
-- 
+- Katarzyna Stefanowicz - 11845910 (sk6152@mci4me.at)
+- Jonathan Roth - (rj5532@mci4me.at)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
