@@ -9,17 +9,14 @@ Ergometer Software für die Diagnostik installieren, vor der ersten Benutzung al
 
 ## Usage
 
-Mithilfe der Leistungsdiagnostik können Vitalwerte wie zum Beispiel die Sauerstoffsättigung, die Herzfrequenz oder die EKG-Ableitungen unter steigender Belastung ausgewertet werden.
-
-Start über Kommandozeile
-```python main.py```
-
-Daten müssen wie wie folgt vorliegen?
+Mithilfe der Leistungsdiagnostik können Vitalwerte wie zum Beispiel die Sauerstoffsättigung, die Herzfrequenz oder die EKG-Ableitungen unter steigender Belastung ausgewertet werden. Die Daten werden mithilfe einer Software als Graph anschaulich abgespeichert.
 
 ## Contributing
 **(Wer ist im Team Name + Matrikelnummer + Email)**
 
 - [Julian Huber - 123](julian.huber@mci.edu)
+- Katarzyna Stefanowicz (sk6152@mci4me.at)
+- 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
