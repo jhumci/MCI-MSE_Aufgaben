@@ -16,7 +16,7 @@ Der Leistungstest startet auf niedriger Stufe, wodurch sich der Nutzer erstmal a
 ## Perspectives
 ### Who will use the system?
 
-...
+Zum einen kann die Leistungsdiagnostik verwendet werden, um den allgemeinen Gesundheitszustand eines Nutzers oder einer Nutzerin zu bestimmen. Dies wird häufig verwendet, um die Herzfunktion und weitere Parameter nach einer langwierigen Erkrankung (wie zum Beispiel Covid19) anzuschauen und zu analysieren, wie gravierend die Folgen sind und wie man wieder mit der Rehabilitation anfängt.
 
 ### Who can provide input about the system?
 
