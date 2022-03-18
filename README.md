@@ -21,9 +21,9 @@ Daten müssen wie wie folgt vorliegen?
 ## Contributing
 **(Team Name + Matrikelnummer + Email)**
 
-- [Hannes Hemper - ha6396](ha6396@mci4me.at)
-- [Constantin Schäfer - sc3626](sc3626@mci4me.at)
-- [Florian Schneider  - sf5363](sf5363@mci4me.at)
+- [Hannes Hemper - 2110881015](ha6396@mci4me.at)
+- [Constantin Schäfer - 52113194](sc3626@mci4me.at)
+- [Florian Schneider  - 52110067](sf5363@mci4me.at)
 - [Yunus Schmirander]
 
 ## License
