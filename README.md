@@ -19,8 +19,11 @@ Start über Kommandozeile
 Daten müssen wie wie folgt vorliegen?
 
 ## Contributing
-**(Wer ist im Team Name + Matrikelnummer + Email)**
+**(Team Name + Matrikelnummer + Email)**
 
+- [Hannes Hemper - ha6396]()
+- [Constantin Schäfer- sc3626](julian.huber@mci.edu)
+- [Florian Schneider  - sf5363](julian.huber@mci.edu)
 - [Julian Huber - 123](julian.huber@mci.edu)
 
 ## License
