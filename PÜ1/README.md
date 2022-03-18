@@ -22,7 +22,7 @@ Daten müssen wie wie folgt vorliegen?
 **(Wer ist im Team Name + Matrikelnummer + Email)**
 - [Xaver Detzlhofer - 52110055](dx4991@mci4me.at)
 - [Simon Freilinger - 52110056](sf6948@mco4me.at)
-- [Julian Huber - 123](julian.huber@mci.edu)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
