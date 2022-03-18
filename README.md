@@ -21,10 +21,10 @@ Daten müssen wie wie folgt vorliegen?
 ## Contributing
 **(Team Name + Matrikelnummer + Email)**
 
-- [Hannes Hemper - ha6396]()
-- [Constantin Schäfer- sc3626](julian.huber@mci.edu)
-- [Florian Schneider  - sf5363](julian.huber@mci.edu)
-- [Julian Huber - 123](julian.huber@mci.edu)
+- [Hannes Hemper - ha6396](ha6396@mci4me.at)
+- [Constantin Schäfer - sc3626](sc3626@mci4me.at)
+- [Florian Schneider  - sf5363](sf5363@mci4me.at)
+- [Yunus Schmirander]
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
