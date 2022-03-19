@@ -1,7 +1,8 @@
 # Leistungsdiagnostik
 **(kurze Beschreibung des Ziels)**
 
-Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten
+Mithilfe der Leistungsdiagnostik kann die aktuelle Leistungsfähigkeit eines Spotlers oder vor allem eines Leistungssportlers beurteilt und analysiert werden. Die Software liefert dann die wichtigsten Vitalparameter (Puls, Sauerstoffsättigung etc.), anhand dessen der momentane Leistungsstand beurteilt werden kann.
+Auf gesundheitlicher Ebene wird die Leistungsdiagnostik vor allem zur Prävention und zur Erkennung von Herz-Kreislauf-Erkrankungen eingesetzt, um den Patienten eine möglichst gute und erfolgreiche Regeneration zu gewährleisten.
 
 ## Installation
 
