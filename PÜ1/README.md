@@ -1,8 +1,9 @@
 # Leistungsdiagnostik
 **(kurze Beschreibung des Ziels)**
 
-Mithilfe der Leistungsdiagnostik kann die aktuelle Leistungsfähigkeit eines Spotlers oder vor allem eines Leistungssportlers beurteilt und analysiert werden. Die Software liefert dann die wichtigsten Vitalparameter (Puls, Sauerstoffsättigung etc.), anhand dessen der momentane Leistungsstand beurteilt werden kann.
-Auf gesundheitlicher Ebene wird die Leistungsdiagnostik vor allem zur Prävention und zur Erkennung von Herz-Kreislauf-Erkrankungen eingesetzt, um den Patienten eine möglichst gute und erfolgreiche Regeneration zu gewährleisten.
+Mithilfe der Leistungsdiagnostik kann die aktuelle Leistungsfähigkeit eines Spotlers/einer Sportlerin oder vor allem eines Leistungssportlers beurteilt und analysiert werden. Die Software liefert dann die wichtigsten Vitalparameter (Puls, Sauerstoffsättigung etc.), anhand dessen der momentane Leistungsstand beurteilt werden kann.
+
+Im Bereich des Gesundheitswesens wird die Leistungsdiagnostik vor allem zur Prävention und zur Erkennung von Herz-Kreislauf-Erkrankungen eingesetzt, um den Patienten:innen eine möglichst gute und erfolgreiche Regeneration zu gewährleisten. Mihilfe einer erneuten Leistungsdiagnsotik kann dann ein Vergleich zur voherigen gezogen werden und somit die Entwicklung veranschaulicht werden und man kann entdprechend auf die Veränderung mit neuen Medikamenten oder einem neuen Traininsplan reagieren.
 
 ## Installation
 
