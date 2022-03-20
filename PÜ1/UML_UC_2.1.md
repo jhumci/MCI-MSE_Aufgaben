@@ -14,7 +14,7 @@
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |Sensoren	|Sensoren, die Puls messen	|Sensoren, die auf dem Brustgürtel montiert sind.||
 Zeitmessung	|Im System wird die Zeit erfasst	|Messen von Testdauer.|| 
-Gemessene Puls – Format	Nummerische Daten. |Vorgesehen sind drei Ziffern. 	|068||
+Gemessene Puls – Format	|Nummerische Daten. Vorgesehen sind drei Ziffern. 	|068||
 Erfassung	|Die Puls-Daten werden zusammen mit der jeweiligen Zeit erfasst und in Zeitreihen gespeichert  	|Der gemessene Puls ist einer Zeit zugeordnet.||
 Zeit Format	|Die Zeit wird in folgenden Format gespeichert werden : xx:xx:xx	|23:43:45||
 Bluetooth 	|Die Daten werden von Sensoren zum Computer über Bluetooth zugewiesen 	|Bluetooth- connection|| 
