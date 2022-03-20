@@ -19,7 +19,7 @@ Erfassung	|Die Pulsdaten werden zusammen mit der jeweiligen Zeit erfasst und in 
 Zeit Format	|Die Zeit wird in folgendem Format gespeichert werden : xx:xx:xx	|23:43:45||
 Bluetooth 	|Die Daten werden von Sensoren zum Computer über Bluetooth zugewiesen. 	|Bluetooth- connection|| 
 Einlesen Bedingungen 	|Um das Einlesen der Daten starten zu können, müssen verschiedene Bedingungen erfüllt sein. 	|Karte von Proband:in muss geöffnet sein. Proband:in Daten müssen erfühlt sein.|| 
-Daten Erkennung	|Die Software erkennt den Typ von eingelesen Daten. 	|Die Daten werden von der Software auf ihren Typ überprüft|| 
+Daten Erkennung	|Die Software erkennt den Typ von eingelesen Daten. 	|Die Daten werden von der Software auf ihren Typ überprüft.|| 
 Daten Überprüfung 	|Alle Daten werden immer erfasst. 	|Daten, die in Wirklichkeit nicht plausibel sind, werden auch erfasst.|| 
 Umgang mit Fehlern	|Daten müssen immer einer Zeit zugeordnet sein. Wenn keine Daten vorhanden sind, wird NV (nicht vorhanden) eingetragen. 	|Bei Bufferoverflow oder fehlenden Messdaten muss die Zeit dennoch korrekt erfasst werden. Die fehlenden Werte werden mit NV eingetragen und können später interpoliert und interpretiert werden.||   
 Abbruch |Compuer-seitig darf es nicht zu einem Abbruch kommen. 	|Es wird gewartet bis Daten ankommen oder manuell abgebrochen wird.|| 
