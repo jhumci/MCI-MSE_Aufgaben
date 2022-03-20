@@ -40,11 +40,11 @@ Anhand dieser Abbildungen, welche aus den aufgenommenen Daten des Leistungstests
 
 ### Assumptions and dependencies
 
-...
+Damit die Daten auch das anzeigen, was sie sollen, muss vor der Benutzung der Ergometers eine ausführliche Einweisung in das Gerät gegeben werden. Eventuelle Fehlbedingung könnte zu einer Fälschung der Ergebnisse führen, was im schlimmsten Fall eine Fehlmedikation zur Folge haben könnte. Außerdem muss davon ausgegangen werden, dass das Gerät vor der Benutzung ausreichend von Fachpersonal auf eventuelle Beschädigungen und auf eine funktionierende Software geprüft werden.
 
 ### Design and implementation constraints
 
-...
+Das Fahrradergometer ähnelt im Aufabeu sehr dem eines handelsüblichen Fahrrad. Die Funktion des Ergometers muss bei Verkauf von den Medizintechnikern kontrolliert und von einem Fachunternehmen abgenommen werden. Erst dann steht es zum Verkauf bereit. Die Prozessabläufe und die Implementierung der Daten muss auch regelmäßig auf Funktion und Richtigkeit kontrolliert werden, damit eine reibungslose Leistungsdiagnose gewährleistet werden kann.
 
 ## Risks
 
