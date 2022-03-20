@@ -22,20 +22,21 @@ Das System wird immer von medizinischen Fachpersonal bedient. Sei es der Leistun
 
 ### Who can provide input about the system?
 
-...
+Die Schwierigkeit des Leistungstests wird über den Bremswiderstand der Räder beziehungsweise der Pedale reguliert. Bei ansteigender Stufe wird der Widerstand dementsprechend erhöht. Vitalparamter wie der Puls werden über bestimmte Sensoren in den Griffen gemessen, welche die elektrischen Signale in der Hand aufnehmen.
+Die Sauerstoffsättigung wird über ein Pulsoxymeter gemessen, die EKG-Ableitungen werden über ein 4-oder 12-Kanal-EKG aufgezeichnet. All diese Werte werden mithilfe der Software anschließend in mehrerer Schaubildern abgebildet.
 
 
 ## Project Objectives
 ### Known business rules
 
-...
+Die aufgenommenen Daten stehen unter ärztlicher Schweigepflicht und sind streng vertraulich. Dementsprechend dürfen die Daten nicht an Dritte weitergegeben werden, dies kann nur mit einem Einverständnis der Nutzer:innen erfolgen. Die Daten werden auf den Datenbanken der Krankenhäuser, Sportleistungszentren etc. abgespeichert und nur von der betreuenden Fachkraft eingesehen.
 
 ### System information and/or diagrams
 
 Beispiel von aufgezeichneten EKG Daten
 ![](ekg_example.png)
 
-Aus diesem muss die Herzrate bestimmt werden.
+Anhand dieser Abbildungen, welche aus den aufgenommenen Daten des Leistungstests aufgenommen werden, können wichtige Werte wie die Herzfrequenz, die Amplitude der QRS-Komplexe und die Herzfrequenzvariablität ausgelsen werden. Die Herzfrequenzvariablität bschreibt, wie regelmäßig die einzelnen Herzschläge aufeinander folgen und welche Abstände dazwischen herrschen. Anhand der Auslenkung der Komplexe kann erkannt werden, wie gut die Reizweiterleitung im Herzen funktioniert. Außerdem können mithilfe eines EKGs Erkrankungen wie ein Herzinfarkt oder Kammerflimmern an Unregelmäßigkeiten in den Ableitungen erkannt werden.
 
 ### Assumptions and dependencies
 
@@ -51,7 +52,7 @@ Die größe Gefahr besteht darin, sich auf dem Fahrradergometer zu verletzen (zu
 
 ## Known future enhancements
 
-...
+In Zukunft will man erreichen, dass man zusätzlich die aufgewendete Energie messen kann. Diese wird benötigt, um das Ergometer unterschiedlich schnell zu beschleunigen, was sich wiederum unterschiedlich auf die Herzfrequent auswirkt. Außerdem will man versuchen, den Radwiderstand (Reibewiderstand etc.) so gering wie möglich zu halten, damit man möglichst genau bestimmen kann, was für ein Widerstand gerade wirkt. (im Optimalfall nur der eingestellte Bremswiderstand)
 
 ## References
 
