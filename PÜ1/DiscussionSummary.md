@@ -60,4 +60,4 @@ In Zukunft will man erreichen, dass man zusätzlich die aufgewendete Energie mes
 
 ## Open, unresolved or TBD issues
 
-...
+Noch unklar, da noch Informationen fehlen.
