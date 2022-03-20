@@ -58,4 +58,4 @@ Ein Nutzerinterface ist zur Zeit nicht geplant, könnte aber in Zukunft relevant
 - [Link zur Aufgabenstellung](tbd)
 
 ## Open, unresolved or TBD issues
-Known Business Rules
+Known business rules
