@@ -1,7 +1,7 @@
 # Leistungsdiagnostik
 **(kurze Beschreibung des Ziels)**
 
-Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten
+Werkzeug zur Vereinfachung und Automatisierung von Leistungstests, basierend auf EKG-Daten und Leistungswerten und Patient:innen-Daten.
 Ermittelte Patient:innen-Daten (Leistung, Herzrate) sollen mittels Plot visualisiert werden. Die restlichen Patient:innen-Daten sollen anschließend gemeinsam mit den Plots in einem eigens dafür angelegten Patient:innen-Ordner hinterlegt werden.
 
 
