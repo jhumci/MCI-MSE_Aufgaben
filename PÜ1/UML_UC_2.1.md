@@ -1,8 +1,8 @@
 # Beschreibung der Anwendungsfälle
 
 ## UML-Diagramm
+![UML_UseCase_Ergometer](https://user-images.githubusercontent.com/101809825/159174582-b824246f-1123-4218-ab2e-bfd60d0fb44f.svg)
 
-![](UML_UseCase_Ergometer.svg)
 
 ## Tabellen
 
