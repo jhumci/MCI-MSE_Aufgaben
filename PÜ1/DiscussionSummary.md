@@ -47,17 +47,15 @@ Somit ist eine Auwertung der Daten abhängig vom Probanden.
 Das Tool soll mittells Kommandozeile bedient werden und benötigt zum jetzigen Zeitpunkt kein Nutzerinterface. 
 
 ## Risks
-
-...
+Der Proband könnte sich verausgaben oder durch Überanstrengung sein Herz gefährden.
+Dieses Risiko wird jedoch durch die Überwachung der Herzfrequenz und des automatischen Abbruchs in Folge zu hoher Herzfrequenz minimiert. 
 
 ## Known future enhancements
-
-...
+Ein Nutzerinterface ist zur Zeit nicht geplant, könnte aber in Zukunft relevant werden, da die Bedienung einfacher und intuitiver ist.
 
 ## References
 
 - [Link zur Aufgabenstellung](tbd)
 
 ## Open, unresolved or TBD issues
-
-...
+Known Business Rules
