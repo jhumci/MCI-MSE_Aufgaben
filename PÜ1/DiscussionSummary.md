@@ -1,26 +1,31 @@
 ## Project background
 
 ### Purpose of project
-
-...
+Es wird eine Software zur Leistungsdiagnostik entwickelt.
+Der Ergometer ist bereits vorhanden und kann die Leistung und die Herzfrequenz der Probanden messen. 
+Die Daten werden aktuell einfach als Daten gespeichert. Die Software soll nun die Daten auswerten und visualisieren. 
 
 ### Scope of project
-
-...
+In 2er Teams wird eine Software zur Leistungsdiagnostik entwicklet. 
+Das Tool benötigt kein Interface, da es mittels Kommandozeile bearbeitet wird. 
+Ungültige Durchläufe des Leistungstests sollen in seperatem Ordner gespeichert werden.
+Ausgegeben werden soll ein Plott welcher die Herzrate und die Leistung über den Zeitraum des Tests zeigt.
 
 ### Other background information
-
-...
+Es wird nur ein Testtyp gefahren. Dauer dieses Tests sind 3 Minuten und der Proband erhält ein zu erreichendes Leistungsziel. 
+Ein automatisches Abbruchkriterium ist die Erreichung von 90% der maximalen Herzfrequenz (220-Lebensalter).
+Erfasst wird vom Probanden nur das Geburtsdatum, sein Name und eine technische ID.
 
 ## Perspectives
 ### Who will use the system?
+Benutzt wird das System vom Diagnostiker. Dieser wird mit der Software hantieren um die Daten auszuwerten und dem Probanden präsentieren. 
+Der Prband wird lediglich einen Not-Aus Taster zur Bedinung erhalten um den Test abzubrechen, falls Probleme auftreten.
+Ansonsten wird er mit der Software nicht in Berührung kommen.
 
-...
-
-### Who can provide input about the system?
-
-...
-
+### Who can provide input about the system
+Die Daten (Herzrate und Leistung) werden vom Probanden ins System eingebracht.
+Der Diagnostiker kann jedoch bei Erkennung von Unregelmäßigkeiten in den Daten den Leistungstest manuell als ungültig werten.
+Somit können beide Personen input ins System geben.
 
 ## Project Objectives
 ### Known business rules
@@ -35,12 +40,11 @@ Beispiel von aufgezeichneten EKG Daten
 Aus diesem muss die Herzrate bestimmt werden.
 
 ### Assumptions and dependencies
-
-...
+Um einen gültigen Leistungstest zu fahren, muss die geforderte Leistung erbracht und die Herzrate nicht überschritten werden.
+Somit ist eine Auwertung der Daten abhängig vom Probanden. 
 
 ### Design and implementation constraints
-
-...
+Das Tool soll mittells Kommandozeile bedient werden und benötigt zum jetzigen Zeitpunkt kein Nutzerinterface. 
 
 ## Risks
 
