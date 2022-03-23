@@ -42,7 +42,7 @@ The ergometer has to provide the system with data.
 
 #### What information is included in the data?
 
-The data includes the ecg data from all three subjects, aswell as the power of each of them. With that data you can calculate important results.
+The data includes the ecg-data from all three subjects, aswell as the power-data of each of them. With that data you can calculate important results.
 
 #### How is the data resolved in time and how long are the performance tests?
 
