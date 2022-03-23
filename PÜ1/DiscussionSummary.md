@@ -40,6 +40,12 @@ The system does have external dependencies from the ergometer as well as from th
 The diagnostician has to initiate the test procedure via the command line as there is no user interface yet.
 The ergometer has to provide the system with data.
 
+#### What information is included in the data?
+
+The data includes the ecg data from all three subjects, aswell as the power of each of them. With that data you can calculate important results.
+
+#### How is the data resolved in time and how long are the performance tests?
+
 ### Design and implementation constraints
 
 - Until a user interface is established the system is operated via the command line. 
