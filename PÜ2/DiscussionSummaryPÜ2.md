@@ -2,7 +2,7 @@
 
 ### Purpose of project
 
-Mithilfe einer Leistungsdiagnostik am Fahrradergometer kann der gesundheitliche Zustand einer Privatperson, bzw. der Leistungsstand eines Sportlers/einer Spotlerin bestimmt werden. Dies geschieht mithilfe einer Software, welche die aufgezeichnete Aänderung der Vitalparameter wie zum Beispiel Sauerstoffsättigung und Herzfrequenz mit steigender Belastung aufzeichnet. Zusätzlich können die Ableitungen von einem Elektrokardiagramm in einem Schaubild abgebildet werden. 
+Mithilfe einer Leistungsdiagnostik am Fahrradergometer kann der gesundheitliche Zustand einer Privatperson, bzw. der Leistungsstand eines Sportlers/einer Spotlerin bestimmt werden. Dies geschieht mithilfe einer Software, welche die aufgezeichnete Änderung der Vitalparameter wie zum Beispiel Sauerstoffsättigung und Herzfrequenz mit steigender Belastung aufzeichnet. Zusätzlich können die Ableitungen von einem Elektrokardiagramm in einem Schaubild abgebildet werden. 
 Ein Leistungstest wird meistens zu Beginn einer Saison gemacht, um den momentanen Leistungsstand eines Sportlers/einer Sportlerin zu analysieren und Schwachstellen aufdecken zu können.
 Im Gesundheitssektor können mithilfe einer Leistungsdiagnostik Erkrankungen frühzeitig erkannt werden oder der Zustand einer bereits bestehenden Krankheit beurteilt werden.
 
