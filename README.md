@@ -24,9 +24,9 @@ Daten müssen wie wie folgt vorliegen?
 **(Team Name + Matrikelnummer + Email)**
 
 - [Hannes Hemper - 12008637] ha6396@mci4me.at
-- [Constantin Schäfer - 52113194] sc3626@mci4me.at
-- [Florian Schneider  - 52110067] sf5363@mci4me.at
-- [Yunus Schmirander]
+- [Fynn Buchsteiner - ] bf3044@mci4me.at
+- [Christian Hofer - ] @mci4me.at
+- [Julian Huber]
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
