@@ -47,6 +47,11 @@ Aus diesem muss die Herzrate bestimmt werden.
 Um einen gültigen Leistungstest zu fahren, muss die geforderte Leistung erbracht und die Herzrate nicht überschritten werden.
 Somit ist eine Auwertung der Daten abhängig vom Probanden. 
 
+PÜ2 
+ecg_data_subject_ enthält die Herzfrequenz von jedem der drei Testpersonen.
+power_data_ enthält die gefahrenen Watt Zahlen
+subject_ enthält eine der Testperson zugewiesene ID, das Geburtsdatum, die angestrebte Watt Zahl und die Testdauer welche bei allen drei Probanden 180s beträgt. 
+
 ### Design and implementation constraints
 Das Tool soll mittells Kommandozeile bedient werden und benötigt zum jetzigen Zeitpunkt kein Nutzerinterface. 
 
