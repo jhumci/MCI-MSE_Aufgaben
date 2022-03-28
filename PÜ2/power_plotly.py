@@ -11,10 +11,12 @@ def performance_data():
         power_data_watts = open(file_name).read().split("\n")
         x = np.array(power_data_watts)
         plt.title(("Line graph {0}").format(i))
-        plt.plot(x, color="red")
+        plt.plot(x, color="r")
 
         plt.show()
 
 # %% Erstellen des Plots
 performance_data()
+# %%
+
 # %%
