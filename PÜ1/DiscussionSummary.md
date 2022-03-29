@@ -10,7 +10,7 @@ Athletes will provide the system with data recorded by an ergometer. The generat
 
 ### Other background information
 
-...
+The persons tested shall be at good health.
 
 ## Perspectives
 ### Who will use the system?
