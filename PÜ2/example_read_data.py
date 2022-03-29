@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 # %% Dateipfade erlangen; Source: https://www.geeksforgeeks.org/file-searching-using-python/		#Flo
-# Funktion definieren, welche Dateipfad für gesuchte Dateien findet		#Flo
+# Funktion definieren, welche den Dateipfad für gesuchte Dateien findet		#Flo
 def getFilePath(filename):
 
 	# Ordnerstruktur des auführenden Systems einlesen		#Flo
