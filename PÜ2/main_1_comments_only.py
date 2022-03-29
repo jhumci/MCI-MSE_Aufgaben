@@ -15,7 +15,6 @@
 #%% 2.4 - Erstellen einer Zusammenfassung
   # allocating the data to the test persons files
   # building a specific summary 
-  #  -- hier noch weiters schreiben?
   
 #%% 2.5 - Visualisierung der Daten
   # analized data get plotted seperately
