@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-03-31T18:42:08.721Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="oHYeLSKw5TZiO__geYCr" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-31T18:45:46.888Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="zruZwwwK_7M5c93gr9B6" version="17.4.0" type="github">
   <diagram id="swfV8oJz9bNRTuYWVmhN" name="Page-1">
     <mxGraphModel dx="870" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AlglJK2JogA8gRLeqNJN-10" value="Daten" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="100" y="470" width="160" height="86" as="geometry" />
+          <mxGeometry x="334" y="470" width="160" height="86" as="geometry" />
         </mxCell>
         <mxCell id="AlglJK2JogA8gRLeqNJN-12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-10">
           <mxGeometry y="26" width="160" height="8" as="geometry" />
@@ -37,7 +37,7 @@
         <mxCell id="AlglJK2JogA8gRLeqNJN-25" value="Erfahrung" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-24">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="AlglJK2JogA8gRLeqNJN-38" value="+ item: attribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-24">
+        <mxCell id="AlglJK2JogA8gRLeqNJN-38" value="Fristen" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-24">
           <mxGeometry y="52" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="AlglJK2JogA8gRLeqNJN-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-24">
@@ -79,6 +79,25 @@
               <mxPoint x="290" y="170" />
             </Array>
             <mxPoint x="-12" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AlglJK2JogA8gRLeqNJN-49" value="Arzt/Ärztin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;labelBackgroundColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="334" y="227" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="AlglJK2JogA8gRLeqNJN-50" value="Verantwortung" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-49">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="AlglJK2JogA8gRLeqNJN-51" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-49">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="AlglJK2JogA8gRLeqNJN-52" value="Daten auswerten()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;labelBackgroundColor=#ffffff;" vertex="1" parent="AlglJK2JogA8gRLeqNJN-49">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="AlglJK2JogA8gRLeqNJN-53" value="" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.522;entryY=1.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AlglJK2JogA8gRLeqNJN-49" target="AlglJK2JogA8gRLeqNJN-17">
+          <mxGeometry x="1" y="-292" width="80" relative="1" as="geometry">
+            <mxPoint x="380" y="190" as="sourcePoint" />
+            <mxPoint x="460" y="190" as="targetPoint" />
+            <mxPoint x="-6" y="-56" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
