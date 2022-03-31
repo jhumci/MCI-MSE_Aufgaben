@@ -42,12 +42,13 @@ The ergometer has to provide the system with data.
 
 #### What information is included in the data?
 
-The Input-Data includes three different data sets for each test person ( subject). The First data set is called "ecg_data_subject_#number.csv". It shows a large amount of ECG data from the test subjects. The second set. "power_data_#number.txt" shows the performce of each subject over time ( 3 minutes). The third and last data set: "subject_#number.json" shows general information about the subjects: the id-number, their generated power in watt, the birth year and the duration of the test.
+The Input-Data includes three different data sets for each test person ( subject). The First data set is called "ecg_data_subject_#number.csv". It shows a large amount of ECG data from the test subjects. The second set. "power_data_<number>.txt" shows the performce of each subject over time ( 3 minutes). The third and last data set: "subject_<number>.json" shows general information about the subjects: the id-number, their generated power in watt, the birth year and the duration of the test.
 
 #### How is the data resolved in time and how long are the performance tests?
 
 Each performance test lasted 3 minutes (180 seconds). The power data shows the performance in watt achieved in every second of the test, that means 180 values per subject. The First subject reached 100 watt on average, the second subject 200 watt and the third subject 300 watt. 
 
+NOTE-JHU: Passt. <placeholder> ist eine üblichere Notation als # 
 
 ### Design and implementation constraints
 
