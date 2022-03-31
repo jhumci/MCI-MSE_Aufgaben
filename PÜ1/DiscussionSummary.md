@@ -16,6 +16,7 @@ Athletes will provide the system with data recorded by an ergometer. The generat
 ### Who will use the system?
 
 Athletes will use the system to assess their performance through a standardised performance testing procedure. Diagnosticians will use the system to process the athletes data. That includes manually defining the scope of the testing procedure as well as visualizing the athletes data and storing it in the right location.
+NOTE-JHU: Sehr gut, nur zu Klarstellung: Was wir entwickeln wertet nur aus, aber wir müssen damit die den Umfang der Leistungstest festlegen. 
 
 ### Who can provide input about the system?
 
@@ -26,6 +27,7 @@ Athletes are providing the ergometer with input. The system then interprets the 
 ### Known business rules
 
 none
+NOTE-JHU: z.B: Ablauf: erst werden Daten durch Leistugnstest erstellt. Dann ausgewertet.
 
 ### System information and/or diagrams
 
