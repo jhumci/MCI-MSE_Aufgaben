@@ -84,3 +84,5 @@
 
 		# Frage nach Überprüfung der Daten  
 		# Speichern der Daten in Proband:in Karte 
+		
+# Bewertung: Sehr schön gelöst und durch die Einrückungen sehr übersichtlich!
