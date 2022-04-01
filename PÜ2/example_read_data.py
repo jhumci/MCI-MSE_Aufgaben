@@ -46,3 +46,6 @@ for i in file_names:
 	
 	# Plot ausgeben
 	plt.show()
+	
+	
+# Bewertung: Sehr guter Ansatz. Es fehlen nur Kleinigkeiten, wie die automatisierte Anpassung der Plot-Namen in Zeile 44.
