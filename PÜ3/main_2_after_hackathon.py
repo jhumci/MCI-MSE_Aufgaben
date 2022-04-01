@@ -1,4 +1,4 @@
-# UC 2.0
+#%% UC 2.0
 
 #%% UC 2.1 Einlesen der Daten
 
@@ -144,4 +144,12 @@ results_file = os.path.join(folder_input_data, 'data.json')
 
 with open(results_file, 'w', encoding='utf-8') as f:
     json.dump(json_data_to_save, f, ensure_ascii=False, indent=4)
+# %%
+
+# %%
+
+# %%
+
+# %%
+
 # %%
