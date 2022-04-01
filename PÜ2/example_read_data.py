@@ -16,7 +16,9 @@ def performance_data():
 # %% Erstellen des Plots
 performance_data()
 
-
+# Bewertung: Gute Lösung, vor allem die direkte Umsetzung in einer Funktion. Beim nächsten mal die For-Schleife um die Funktion herumbauen. Siehe unten:
+# for i in range(1,4)
+#   performance_data(i)
 # %%
 
 # %%
