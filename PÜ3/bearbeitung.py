@@ -134,14 +134,24 @@ def ploten(peaks, power_data_watts):
     return peaks_downsampled
 
 def jsonopen(folder_current, subject_id):
+  
+    """ Funktion, die json_Datei offnet"""
+    
+    # Definiren, wo die Daten zu finden sind. 
     folder_input_data = os.path.join(folder_current, 'input_data')
     file_name =  os.path.join(folder_input_data, 'power_data_' + subject_id + '.txt')
+    
+    #Daten offnen
     power_data_watts = open(file_name).read().split("\n")
     power_data_watts.pop(-1)
     len(power_data_watts)
+    
     return power_data_watts
 
 def findpeaks(ekg_data):
+  
+    """ Funtion, die peaks in Daten sucht. """
+    
     peaks, info = nk.ecg_peaks(ekg_data["ECG"], sampling_rate=1000)
 
     number_of_heartbeats = peaks["ECG_R_Peaks"].sum()
@@ -149,13 +159,18 @@ def findpeaks(ekg_data):
     duration_test_min = ekg_data.size/1000/60
 
     average_hr_test = number_of_heartbeats / duration_test_min
+    
     return peaks,average_hr_test
 
 def abbruch(subject_data, peaks):
+    """ Funtion, die definiert, wann zu einem Abbruch kommt. """
+    
+    # Definition von Threshold
     maximum_hr = peaks['average_HR_10s'].max()
 
     subject_max_hr = 220 - (2022 - subject_data["birth_year"])
 
+    # Angabe von Threshold uberquerung 
     if maximum_hr > subject_max_hr*0.90:
         termination = True
     return termination,maximum_hr,subject_max_hr
@@ -163,6 +178,8 @@ def abbruch(subject_data, peaks):
 
 
 def jsondownload(jsonpath, jsonfile):
+    """ Json_Dateien herunterladen."""
+    
     folder_input_data = os.path.join(jsonpath, 'input_data')
 
 
