@@ -17,7 +17,7 @@ proband = str(input("Geben Sie bitte Proband:in Name in Form subject_nr ein: "))
 
 def analize (probandfile):
   
-    """ Hauptfunktion ( Stamm des Programms), welche einliest, bearbeitet und analziert die Daten. Werwendet andere Unterprogramme. """
+    """ Hauptfunktion ( Stamm des Programms), welche einliest, bearbeitet und analysiert die Daten. Werwendet andere Unterprogramme. """
  
     folder_current = os.path.dirname(__file__) 
     folder_input_data = os.path.join(folder_current, 'input_data')
