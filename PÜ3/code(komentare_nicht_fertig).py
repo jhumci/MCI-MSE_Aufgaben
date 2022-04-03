@@ -8,6 +8,9 @@ import json
 
 
 list_of_new_tests = []
+
+proband = str(input("Geben Sie bitte Proband:in Name in Form subject_nr ein: "))
+
 ## Überprüfen ob Dateien vorhanden sind
 
 def analize (probandfile):
@@ -176,5 +179,4 @@ def jsondownload(jsonpath, jsonfile):
 
 
 # Funktion aufrufen 
-proband = 'subject_1'
 analize(proband)
