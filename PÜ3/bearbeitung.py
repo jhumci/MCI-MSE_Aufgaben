@@ -89,6 +89,7 @@ def analize (probandfile):
 # BIBLIOTHEK
 
 def speichern(subject_data, average_hr_test, subject_max_hr, power_data_watts, peaks_downsampled, manual_termination):
+  """ Funktion, die Daten speichert. Format "json". """ 
     data = {"User ID": subject_data["subject_id"], "Reason for test termation": manual_termination, "Average Heart Rate": average_hr_test, "Maximum Heart Rate": subject_max_hr, "Test Length (s)": len(power_data_watts), "Test Power (W)": subject_data["test_power_w"], "Average Power": peaks_downsampled["Power (Watt)"].mean()}
 
     json_data_to_save = json.dumps(data)
@@ -101,9 +102,14 @@ def speichern(subject_data, average_hr_test, subject_max_hr, power_data_watts, p
         json.dump(json_data_to_save, f, ensure_ascii=False, indent=4)
 
 def maunalabbruch():
+  """ Funtion, die erlaubt manuele Abbruch"""
+  
     manual_termination = False
+    
+    # Definieren eine von moglichen Abbruchkriterien - hier Frage an Testdurchfuhrer:in
     manual_termination = input("Is this test invalid? (leave blank if valid): ")
 
+    # Ausfuhren von matuele Abbruchkriterium
     if manual_termination != False:
         termination = True
     return manual_termination
@@ -151,8 +157,6 @@ def abbruch(subject_data, peaks):
 
 
 def jsondownload(jsonpath, jsonfile):
-    ## Vergleich der Maximalen Herzfrequenz mit Alter des Patienten
-
     folder_input_data = os.path.join(jsonpath, 'input_data')
 
 
