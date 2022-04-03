@@ -17,7 +17,7 @@ proband = str(input("Geben Sie bitte Proband:in Name in Form subject_nr ein: "))
 
 def analize (probandfile):
   
-  """ Hauptfunktion, welche einliest, bearbeitet und analziert die Daten. Werwendet andere Unterprogramme. """
+    """ Hauptfunktion ( Stamm des Programms), welche einliest, bearbeitet und analziert die Daten. Werwendet andere Unterprogramme. """
  
     folder_current = os.path.dirname(__file__) 
     folder_input_data = os.path.join(folder_current, 'input_data')
@@ -29,11 +29,11 @@ def analize (probandfile):
     new_ecg_data= pd.read_csv(file_name)
     
     ## Erstellen einer Liste von Tests, die zu verarbeiten sind
-
     list_of_new_tests.append(new_ecg_data)
 
-
+    # Erstellen eines Graffen, der zu verarbeiten ist
     new_ecg_data["Subject_" + subject_id].plot()
+    
 
     #%% UC 2.2 Vorverarbeiten der Daten
 
@@ -54,6 +54,7 @@ def analize (probandfile):
     termination = False
 
     termination, maximum_hr, subject_max_hr = abbruch(subject_data, peaks)
+    
 
     #%% UC 2.4 Erstellen einer Zusammenfassung
     
@@ -64,6 +65,7 @@ def analize (probandfile):
     print(" \n")
     print("Maximum HR was: " + str(maximum_hr))
     print("Was test terminated because exceeding HR " + str(termination))
+    
 
     #%% UC 2.5 Visualisierung der Daten
 
@@ -89,7 +91,7 @@ def analize (probandfile):
 # BIBLIOTHEK
 
 def speichern(subject_data, average_hr_test, subject_max_hr, power_data_watts, peaks_downsampled, manual_termination):
-  """ Funktion, die Daten speichert. Format "json". """ 
+    """ Funktion, die Daten speichert. Format "json". """ 
     data = {"User ID": subject_data["subject_id"], "Reason for test termation": manual_termination, "Average Heart Rate": average_hr_test, "Maximum Heart Rate": subject_max_hr, "Test Length (s)": len(power_data_watts), "Test Power (W)": subject_data["test_power_w"], "Average Power": peaks_downsampled["Power (Watt)"].mean()}
 
     json_data_to_save = json.dumps(data)
@@ -102,7 +104,7 @@ def speichern(subject_data, average_hr_test, subject_max_hr, power_data_watts, p
         json.dump(json_data_to_save, f, ensure_ascii=False, indent=4)
 
 def maunalabbruch():
-  """ Funtion, die erlaubt manuele Abbruch"""
+   """ Funtion, die erlaubt manuele Abbruch"""
   
     manual_termination = False
     
@@ -115,15 +117,19 @@ def maunalabbruch():
     return manual_termination
 
 def ploten(peaks, power_data_watts):
+    """ Funktion, die Daten abruft und plotet"""
+    
+    # Daten abrufen 
     peaks_downsampled = peaks[peaks.index % 1000 == 0]  
 
     peaks_downsampled = peaks_downsampled.reset_index(drop=True)
     peaks_downsampled = peaks_downsampled.drop(["ECG_R_Peaks"],axis=1)
     peaks_downsampled
 
-
+    # Daten ( in Watt ) vorbereiten 
     peaks_downsampled["Power (Watt)"] = pd.to_numeric(power_data_watts)
-    #peaks_downsampled["Power (Watt)"] = peaks_downsampled["Power (Watt)"]
+    
+    #Daten ploten
     peaks_downsampled.plot()
     return peaks_downsampled
 
