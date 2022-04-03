@@ -38,7 +38,6 @@ def analize (probandfile):
     #%% UC 2.2 Vorverarbeiten der Daten
 
     ## Anlegen einer Zeitreihe der Herzfrequenz aus den EKG-Daten
-
     ekg_data=pd.DataFrame()
     ekg_data["ECG"] = new_ecg_data["Subject_" + subject_id]
 
@@ -46,7 +45,6 @@ def analize (probandfile):
     peaks, average_hr_test = findpeaks(ekg_data)
 
     ## Calculate heart rate moving average
-
     peaks['average_HR_10s'] = peaks.rolling(window=10000).mean()*60*1000
     peaks['average_HR_10s'].plot()
 
@@ -58,7 +56,8 @@ def analize (probandfile):
     termination, maximum_hr, subject_max_hr = abbruch(subject_data, peaks)
 
     #%% UC 2.4 Erstellen einer Zusammenfassung
-
+    
+    ## Ausgabe einer Zusammenfassung
     print("Summary for Subject " + str(subject_data["subject_id"]))
     print("Year of birth:  " + str(subject_data["birth_year"]))
     print("Test level power in W:  " + str(subject_data["test_power_w"]))
@@ -66,35 +65,22 @@ def analize (probandfile):
     print("Maximum HR was: " + str(maximum_hr))
     print("Was test terminated because exceeding HR " + str(termination))
 
-    ## Ausgabe einer Zusammenfassung
-
     #%% UC 2.5 Visualisierung der Daten
 
     ## Öffnen der Leistungsdaten
-
-    # Opening JSON file
     power_data_watts = jsonopen(folder_current, subject_id)
-
 
     # %%
     ## Erstellung eines Plots
-
-
-    #peaks['average_HR_10s'].plot()
-
     peaks_downsampled = ploten(peaks, power_data_watts)
-
-    #peaks_downsampled["Power (Watt)"].plot()
 
     #%% UC 2.6 Manuelle Eingabe eines Abbruchkritierums
 
     ## Abfrage an Nutzer:in, ob Abgebrochen werden soll
-
     manual_termination = maunalabbruch()
 
 
     #%% UC 2.7 Speichern der Daten
-
 
     # Speichern der Daten
     speichern(subject_data, average_hr_test, subject_max_hr, power_data_watts, peaks_downsampled, manual_termination)
