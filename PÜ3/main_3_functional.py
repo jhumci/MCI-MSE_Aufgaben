@@ -10,46 +10,36 @@ import json
 
 #%% UC 2.1 Einlesen der Daten
 
-list_of_new_tests = []
 ## Überprüfen ob Dateien vorhanden sind
 
-
+list_of_new_tests = [] #leeres Array erstellen
 folder_current = os.path.dirname(__file__) 
 folder_input_data = os.path.join(folder_current, 'input_data')
-for file in os.listdir(folder_input_data):
+
+
+    for file in os.listdir(folder_input_data):
     
-    if file.endswith(".csv"):
-        file_name = os.path.join(folder_input_data, file)
-        print(file_name)
-        subject_id = file_name.split(".")[0][-1]
-        new_ecg_data= pd.read_csv(file_name)
-## Erstellen einer Liste von Tests, die zu verarbeiten sind
-
-        list_of_new_tests.append(new_ecg_data)
-
+        if file.endswith(".csv"):  #Dateityp überprüfen 
+            file_name = os.path.join(folder_input_data, file)
+            subject_id = file_name.split(".")[0][-1]
+            print(file_name)
+            new_ecg_data= pd.read_csv(file_name)
+            ## Erstellen einer Liste von Tests, die zu verarbeiten sind
+            list_of_new_tests.append(new_ecg_data)
 
 new_ecg_data["Subject_3"].plot()
+
 
 #%% UC 2.2 Vorverarbeiten der Daten
 
 ## Anlegen einer Zeitreihe der Herzfrequenz aus den EKG-Daten
-
-import neurokit2 as nk
-
-ekg_data=pd.DataFrame()
+ekg_data=pd.DataFrame() #Tabelle erstellen 
 ekg_data["ECG"] = new_ecg_data["Subject_3"]
 
-# Find peaks
-peaks, info = nk.ecg_peaks(ekg_data["ECG"], sampling_rate=1000)
 
-number_of_heartbeats = peaks["ECG_R_Peaks"].sum()
-
-duration_test_min = ekg_data.size/1000/60
-
-average_hr_test = number_of_heartbeats / duration_test_min
+#find Peaks
 
 ## Calculate heart rate moving average
-
 peaks['average_HR_10s'] = peaks.rolling(window=10000).mean()*60*1000
 peaks['average_HR_10s'].plot()
 
@@ -63,7 +53,7 @@ termination = False
 
 folder_input_data = os.path.join(folder_current, 'input_data')
 
-import json
+
 # Opening JSON file
 
 file_name = folder_input_data = os.path.join(folder_input_data, 'subject_3.json')
@@ -149,12 +139,4 @@ results_file = os.path.join(folder_input_data, 'data.json')
 
 with open(results_file, 'w', encoding='utf-8') as f:
     json.dump(json_data_to_save, f, ensure_ascii=False, indent=4)
-# %%
-
-# %%
-
-# %%
-
-# %%
-
 # %%
