@@ -11,7 +11,7 @@ import json
 # Erstellen von neue-testen-Liste  
 list_of_new_tests = []
 
-# Frage - Daten von welche Proband:in analiziert sein sollten. 
+# Frage - Daten von welche Proband:in analysiert sein sollten. 
 proband = str(input("Geben Sie bitte Proband:in Name in Form subject_nr ein: "))
 
 
