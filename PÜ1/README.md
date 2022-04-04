@@ -26,6 +26,12 @@ Daten müssen wie wie folgt vorliegen?
 - [Xaver Detzlhofer - 52110055](dx4991@mci4me.at)
 - [Simon Freilinger - 52110056](sf6948@mco4me.at)
 
+## Punkte
+
+| Aufgabe       | 1.1. | 1.2. | 2.1. | 2.2. | 3 | 2.1. | 2.2. | 2.3. |
+|---------------|------|------|------|------|---|------|------|------|
+| Gesamtpunkte  | 1    | 2    | 3    | 4    | 0 | 3    | 3    | 3    |
+| Punkte bisher | 1    | 2    | 3    | 4    | 0 | 1,5  | 2,1  | 0,6  |
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
