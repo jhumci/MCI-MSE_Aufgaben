@@ -28,5 +28,15 @@ Daten müssen wie wie folgt vorliegen?
 - [Christian Hofer - ] @mci4me.at
 - [Julian Huber]
 
+## Punkte
+
+
+| Aufgabe       | 1.1. | 1.2. | 2.1. | 2.2. | 3 | 2.1. | 2.2. | 2.3. |
+|---------------|------|------|------|------|---|------|------|------|
+| Gesamtpunkte  | 1    | 2    | 3    | 4    | 0 | 3    | 3    | 3    |
+| Punkte bisher | 1    | 2    | 3    | 3,6  | 0 | 3    | 3    | 3    |
+
+- Fynn und Christan erst ab Aufgabe 3
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
