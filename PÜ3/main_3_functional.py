@@ -16,8 +16,17 @@ list_of_new_tests = [] #leeres Array erstellen wo später die Daten der Tests ge
 folder_current = os.path.dirname(__file__) 
 folder_input_data = os.path.join(folder_current, 'input_data')
 
-def einlesen_daten():
+def einlesen_daten(folder_input_data):
+    """
+    Function that loads data from a folder with intput data and returns the data in a list
     
+        Parameters:
+            - folder_input_data (str): path to the data
+         
+        Returns:
+            - new_ecg_data (array)_ List with EGK data
+    
+    """
     for file in os.listdir(folder_input_data):
         if file.endswith(".csv"):  #Dateien in diesem Ordner auf die Endung ".csv" überprüft. 
             file_name = os.path.join(folder_input_data, file) #Dateien mit der ".csv"-Endung werden ausgelesen
