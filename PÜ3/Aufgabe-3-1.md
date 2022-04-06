@@ -1,0 +1,2 @@
+- Vererbung durch leeres Dreieck bei Person kenntlich machen
+- Kompositionspfeil bei Ergometer unangebracht
