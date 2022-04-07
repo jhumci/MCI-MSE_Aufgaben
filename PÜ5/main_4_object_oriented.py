@@ -216,6 +216,25 @@ for file in os.listdir(folder_input_data):
     if file.endswith(".txt"):
         list_of_power_data.append(PowerData(file_name))
 
+#%%
+
+iterator = 0
+
+for test in list_of_new_tests:
+    test.create_hr_data()
+    test.add_subject(list_of_subjects[iterator])
+    test.add_power_data(list_of_power_data[iterator])
+    test.evaluate_termination()
+
+    test.create_plot()
+    test.create_summary()
+    test.ask_for_termination()
+    test.save_data
+
+    iterator = iterator +1
+
+
+
 
 # %% Programmablauf
 
