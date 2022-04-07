@@ -198,3 +198,8 @@ def jsondownload(jsonpath, jsonfile):
 
 # Funktion aufrufen 
 analize(proband)
+
+# Bewertung: Gute Arbeit! Generell habt ihr das prinzip der Methoden verstanden. Ob es Sinn macht eine große analize-Funktion zu machen, werden wir in der nächsten Übung
+# besprechen. Doctrings sollen mehr Informationen als nur eine Textbeschreibung haben. Sieht eucht einmal Docstrings von fertigen Funktionen an, die 
+# geben zusätzliche Informationen zu Input/Output Parametern einer Funktion 
+
