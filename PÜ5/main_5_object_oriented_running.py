@@ -1,9 +1,10 @@
 # %%
 # Import external packages
-
+import numpy as np
 import pandas as pd
 import neurokit2 as nk
 import json
+
 
 # %%
 # Definition of Classes
@@ -140,9 +141,13 @@ class Test:
         print("Maximum HR was: " + str(self.maximum_hr))
         print("Was test terminated because exceeding HR: " + str(self.terminated))
         print("Was test terminated because for other reasons: " + str(self.manual_termination))
+        
+        print("average heartrate was:" + str(self.average_hr_test))
+        print("heart rate variability was:" + str())
 
         print("________________")
         print(" \n")
+        
 
     def ask_for_termination(self):
         """
@@ -249,3 +254,9 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
     """
 
     iterator = iterator + 1
+
+# %%
+#print("average heartrate was:" + str(self.average_hr_test))
+# %%
+
+# %%
