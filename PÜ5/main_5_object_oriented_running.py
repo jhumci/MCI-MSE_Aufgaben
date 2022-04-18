@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 import neurokit2 as nk
 import json
-
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # %%
 # Definition of Classes
@@ -108,6 +110,10 @@ class Test:
         
         self.maximum_hr = self.hr_peaks['average_HR_10s'].max()
 
+        # Calculate Heart Rate Variability
+        self.heart_rate_variability = self.duration_test_min*60 / self.number_of_heartbeats
+
+
         #self.peaks['average_HR_10s'].plot()
 
     def evaluate_termination(self):
@@ -142,8 +148,8 @@ class Test:
         print("Was test terminated because exceeding HR: " + str(self.terminated))
         print("Was test terminated because for other reasons: " + str(self.manual_termination))
         
-        print("average heartrate was:" + str(self.average_hr_test))
-        print("heart rate variability was:" + str())
+        print("average heartrate was:" + str(round(self.average_hr_test, 0)))
+        print("heart rate variability was:" + str(round(self.heart_rate_variability, 3)))
 
         print("________________")
         print(" \n")
@@ -167,9 +173,25 @@ class Test:
         self.plot_data = pd.DataFrame()
         self.plot_data["Heart Rate"] = self.hr_peaks[self.ecg_data.index % 1000 == 0]["average_HR_10s"]  
         self.plot_data = self.plot_data.reset_index(drop=True)
-
         self.plot_data["Power (Watt)"] = pd.to_numeric(self.power_data.power_data_watts)
-        self.plot_data.plot()
+        
+        fig = plt.figure()
+        plt.subplot()
+        plt.plot(self.plot_data["Heart Rate"], color = "green", label = "Heart Rate")
+
+        plt.title('Subject {0}'.format(self.subject_id))
+        ax = plt.subplot()
+        plt.plot(self.plot_data["Power (Watt)"], color = "red", label = "Power (Watt)")
+        plt.tick_params(right = True, labelright=True)
+        plt.xlabel('Zeit / Sekunden')
+        plt.ylabel('Leistung / Watt')
+        ax2 = ax.twinx()
+        ax2.set_ylim(60,200)
+        ax2.set_ylabel("Herzfrequenz / bpm")
+        plt.legend(loc="lower right")
+        plt.savefig("main_5_object_oriented_running_logging.py.jpg")
+        plt.show()
+
     
 
     def save_data(self):
@@ -241,6 +263,7 @@ for test in list_of_new_tests:
 
 
 
+
 # %% Programmablauf
 
 iterator = 0                                        # Zähler, der die gefundenen Dateien und damit Tests zählt
@@ -255,8 +278,11 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
 
     iterator = iterator + 1
 
+
 # %%
 #print("average heartrate was:" + str(self.average_hr_test))
+# %%
+
 # %%
 
 # %%
