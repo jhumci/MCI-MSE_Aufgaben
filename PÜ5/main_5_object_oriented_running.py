@@ -7,6 +7,7 @@ import json
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import seaborn as sns
+import logging
 
 # %%
 # Definition of Classes
@@ -194,16 +195,22 @@ class Test:
 
     
 
-    def save_data(self):
+    # Teil 5.5
+    def save_data_baum(self):
         """
-        Store the test data in a JSON file
+        Store the test data in a JSON baum file
         """
-        __data = {"User ID": self.subject_id, "Reason for test termation": self.manual_termination, "Average Heart Rate": self.average_hr_test, "Maximum Heart Rate": self.maximum_hr, "Test Length (s)": self.power_data.duration_s, "Test Power (W)": self.subject.test_power_w}
-
         __folder_current = os.path.dirname(__file__) 
         __folder_input_data = os.path.join(__folder_current, 'result_data')
+ 
+        __Pfad = os.path.join(__folder_current,'figure_' + str(self.subject_id) + '.png')
+
+
+        __data = {"Test":self.subject_id, "Versuchsperson":{"User ID": self.subject_id, "Reason for test termation": self.manual_termination, "Average Heart Rate": self.average_hr_test, "Maximum Heart Rate": self.maximum_hr, "Test Length (s)": self.power_data.duration_s, "Test Power (W)": self.subject.test_power_w,"Pfad":__Pfad}}
+
+
         
-        __file_name = 'result_data_subject' + str(self.subject_id) +'.json'
+        __file_name = 'result_data_subject' + str(self.subject_id)+ '.json'
         __results_file = os.path.join(__folder_input_data, __file_name)
 
         with open(__results_file, 'w', encoding='utf-8') as f:
@@ -214,6 +221,10 @@ class Test:
 
 
 # %% Eigentlich Ablauf der Event-Pipeline
+
+# Teil 5.3 
+logging.basicConfig(filename='example.log', level=logging.INFO,
+                    format='%(asctime)s:%(message)s')
 
 ## Einlesen der Daten
 
@@ -248,6 +259,7 @@ for file in os.listdir(folder_input_data):
 iterator = 0
 
 for test in list_of_new_tests:
+    
     test.create_hr_data()
     test.add_subject(list_of_subjects[iterator])
     test.add_power_data(list_of_power_data[iterator])
@@ -256,9 +268,15 @@ for test in list_of_new_tests:
     test.create_plot()
     test.create_summary()
     test.ask_for_termination()
-    test.save_data
+    if test.terminated != False:
+        logging.info('Test of subject {} has been marked as invalid because of sad'.format(iterator))
+    
+    else:
+        logging.info('Data of Subject {} has been loaded.'.format(iterator))
 
+    test.save_data_baum()
     iterator = iterator +1
+
 
 
 
