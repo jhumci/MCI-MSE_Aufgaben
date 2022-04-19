@@ -48,6 +48,8 @@ class Subject():
         self.subject_max_hr = 220 - (2022 - __subject_data["birth_year"])
         self.subject_id = __subject_data["subject_id"]
         self.test_power_w = __subject_data["test_power_w"]
+        
+        log.info('Data of Subject-id: %s has been loaded', str(iterator))      
 
 class PowerData():
     """
@@ -300,7 +302,7 @@ for test in list_of_new_tests:                      # Alle Tests werden nacheina
 
     iterator = iterator + 1
 
-    log.info('Data of Subject-id: %s has been loaded', str(iterator))      
+
     
 
 
