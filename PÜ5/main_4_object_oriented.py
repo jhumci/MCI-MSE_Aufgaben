@@ -12,13 +12,11 @@ import json
 class Subject():
     """
     Test-Subject with the following attributes:
-
     - birth_year: int
     - age: int
     - subject_max_hr: int
     - subject_id: int
     - test_power_w: int
-
     """
     def __init__(self, file_name):
         """
@@ -70,8 +68,6 @@ class Test:
     - average_hr_test: int
     - duration_test_min: int
     - number_of_heartbeats: int
-
-
     """
     def __init__(self, file_name):
         """
@@ -87,7 +83,6 @@ class Test:
     def create_hr_data(self):
         """
         Load a dataframe of ecg_data to add additional attributes to the test object
-
         """
 
         self.ecg_data["ECG"] = self.ecg_data.iloc[:, [1]]
@@ -101,11 +96,16 @@ class Test:
 
         self.average_hr_test = self.number_of_heartbeats / self.duration_test_min
 
+        ## Determine HR Variance with statistics package handling ecg_data from the test object
+        self.hr_variance = stats.variance(self.ecg_data["ECG"])
+
         ## Calculate heart rate moving average
 
         self.hr_peaks['average_HR_10s'] = self.hr_peaks.rolling(window=10000).mean()*60*1000
         
         self.maximum_hr = self.hr_peaks['average_HR_10s'].max()
+
+
 
         #self.peaks['average_HR_10s'].plot()
 
@@ -138,8 +138,13 @@ class Test:
         print("Year of birth:  " + str(self.subject.birth_year))
         print("Test level power in W:  " + str(self.subject.test_power_w))
         print("Maximum HR was: " + str(self.maximum_hr))
+        #Print Average HR: Aufgabe 4.2
+        print("Average HR was: " + str(self.average_hr_test))
+        #Print Variance HR: Aufgabe 4.2
+        print("Variance of HR was: " + str(self.hr_variance))
         print("Was test terminated because exceeding HR: " + str(self.terminated))
         print("Was test terminated because for other reasons: " + str(self.manual_termination))
+
 
         print("________________")
         print(" \n")
@@ -171,7 +176,12 @@ class Test:
         """
         Store the test data in a JSON file
         """
-        __data = {"User ID": self.subject_id, "Reason for test termation": self.manual_termination, "Average Heart Rate": self.average_hr_test, "Maximum Heart Rate": self.maximum_hr, "Test Length (s)": self.power_data.duration_s, "Test Power (W)": self.subject.test_power_w}
+        __data = {"User ID": self.subject_id, 
+                  "Reason for test termation": self.manual_termination, 
+                  "Average Heart Rate": self.average_hr_test, 
+                  "Maximum Heart Rate": self.maximum_hr, 
+                  "Test Length (s)": self.power_data.duration_s, 
+                  "Test Power (W)": self.subject.test_power_w}
 
         __folder_current = os.path.dirname(__file__) 
         __folder_input_data = os.path.join(__folder_current, 'result_data')
@@ -181,8 +191,6 @@ class Test:
 
         with open(__results_file, 'w', encoding='utf-8') as f:
             json.dump(__data, f, ensure_ascii=False, indent=4)
-
-
 
 
 
@@ -201,6 +209,9 @@ list_of_power_data = []
 import os
 from re import I
 import pandas as pd
+
+## Import statistics package for calculation of HR variance: Aufgabe 4.2
+import statistics as stats
 
 folder_current = os.path.dirname(__file__) 
 folder_input_data = os.path.join(folder_current, 'input_data')
@@ -224,12 +235,16 @@ iterator = 0                                        # Zähler, der die gefundene
 for test in list_of_new_tests:                      # Alle Tests werden nacheinander durchlaufen
     test.create_hr_data()                           # Erstelle Herzraten aus den EKG-Daten
     test.add_subject(list_of_subjects[iterator])    # Fügt einem Test die passenden Versuchspersonen hinzu
+    
+    test.evaluate_termination()                         # Determine termination criteria for the test object
+    test.add_power_data(list_of_power_data[iterator])   # Add power data of the respective subject to the test object
 
-    """
-    Fügen Sie hier den Programmablauf ein, indem Sie die Methoden und Klassen von oben nutzen
-    """
+    test.create_plot()                              # Create data plot for HR and power data
+    test.create_summary()                           # Print out summary of test object attributes with description
+    test.ask_for_termination()                      # Ask diagnostician for manual termination of the test
+    test.save_data()                                # Save the test object as a json object
 
-    iterator = iterator + 1
+    iterator += 1
 
 
 # %%
